@@ -1,0 +1,145 @@
+[gd_scene load_steps=60 format=2]
+
+[ext_resource path="res://title screen dungeon/background/001.png" type="Texture" id=1]
+[ext_resource path="res://title screen dungeon/background/002.png" type="Texture" id=2]
+[ext_resource path="res://title screen dungeon/background/003.png" type="Texture" id=3]
+[ext_resource path="res://title screen dungeon/titleScreen.gd" type="Script" id=4]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/000.png" type="Texture" id=5]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/001.png" type="Texture" id=6]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/002.png" type="Texture" id=7]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/003.png" type="Texture" id=8]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/025.png" type="Texture" id=9]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/021.png" type="Texture" id=10]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/024.png" type="Texture" id=11]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/026.png" type="Texture" id=12]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/035.png" type="Texture" id=13]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/027.png" type="Texture" id=14]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/029.png" type="Texture" id=15]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/028.png" type="Texture" id=16]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/023.png" type="Texture" id=17]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/034.png" type="Texture" id=18]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/022.png" type="Texture" id=19]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/032.png" type="Texture" id=20]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/031.png" type="Texture" id=21]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/033.png" type="Texture" id=22]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/030.png" type="Texture" id=23]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/015.png" type="Texture" id=24]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/018.png" type="Texture" id=25]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/020.png" type="Texture" id=26]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/004.png" type="Texture" id=27]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/011.png" type="Texture" id=28]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/012.png" type="Texture" id=29]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/005.png" type="Texture" id=30]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/008.png" type="Texture" id=31]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/013.png" type="Texture" id=32]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/010.png" type="Texture" id=33]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/014.png" type="Texture" id=34]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/016.png" type="Texture" id=35]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/019.png" type="Texture" id=36]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/006.png" type="Texture" id=37]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/017.png" type="Texture" id=38]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/007.png" type="Texture" id=39]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/009.png" type="Texture" id=40]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/004.png" type="Texture" id=41]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/003.png" type="Texture" id=42]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/005.png" type="Texture" id=43]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/036.png" type="Texture" id=44]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/001.png" type="Texture" id=45]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/000.png" type="Texture" id=46]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/002.png" type="Texture" id=47]
+[ext_resource path="res://title screen dungeon/ui and logo/logo.png" type="Texture" id=48]
+[ext_resource path="res://title screen dungeon/ui and logo/quit/022.png" type="Texture" id=49]
+[ext_resource path="res://title screen dungeon/ui and logo/quit/023.png" type="Texture" id=50]
+[ext_resource path="res://title screen dungeon/ui and logo/quit/024.png" type="Texture" id=51]
+[ext_resource path="res://title screen dungeon/ui and logo/start/018.png" type="Texture" id=52]
+[ext_resource path="res://title screen dungeon/ui and logo/start/017.png" type="Texture" id=53]
+[ext_resource path="res://title screen dungeon/ui and logo/settings/019.png" type="Texture" id=54]
+[ext_resource path="res://title screen dungeon/ui and logo/settings/020.png" type="Texture" id=55]
+[ext_resource path="res://title screen dungeon/ui and logo/settings/021.png" type="Texture" id=56]
+[ext_resource path="res://title screen dungeon/ui and logo/start/016.png" type="Texture" id=57]
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 46 ), ExtResource( 45 ), ExtResource( 47 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 31 ), ExtResource( 40 ), ExtResource( 33 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 24 ), ExtResource( 35 ), ExtResource( 38 ), ExtResource( 25 ), ExtResource( 36 ), ExtResource( 26 ), ExtResource( 10 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="titleScreen" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="room" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="trap" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="skeleton" type="AnimatedSprite" parent="."]
+position = Vector2( 408, 200 )
+frames = SubResource( 15 )
+playing = true
+
+[node name="wall" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="mc" type="AnimatedSprite" parent="."]
+position = Vector2( 470, 284 )
+frames = SubResource( 1 )
+frame = 4
+playing = true
+
+[node name="Hands" type="Sprite" parent="."]
+position = Vector2( 453, 284 )
+texture = ExtResource( 44 )
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 46, 32 )
+texture = ExtResource( 48 )
+centered = false
+
+[node name="buttons" type="VBoxContainer" parent="."]
+margin_left = 35.0
+margin_top = 148.0
+margin_right = 260.0
+margin_bottom = 306.0
+custom_constants/separation = 10
+
+[node name="start" type="TextureButton" parent="buttons"]
+margin_right = 225.0
+margin_bottom = 46.0
+texture_normal = ExtResource( 57 )
+texture_pressed = ExtResource( 53 )
+texture_hover = ExtResource( 52 )
+texture_disabled = ExtResource( 53 )
+texture_focused = ExtResource( 52 )
+
+[node name="settings" type="TextureButton" parent="buttons"]
+margin_top = 56.0
+margin_right = 225.0
+margin_bottom = 102.0
+texture_normal = ExtResource( 54 )
+texture_pressed = ExtResource( 55 )
+texture_hover = ExtResource( 56 )
+texture_disabled = ExtResource( 55 )
+
+[node name="quit" type="TextureButton" parent="buttons"]
+margin_top = 112.0
+margin_right = 225.0
+margin_bottom = 158.0
+texture_normal = ExtResource( 49 )
+texture_pressed = ExtResource( 50 )
+texture_hover = ExtResource( 51 )
+texture_disabled = ExtResource( 50 )
+texture_focused = ExtResource( 51 )

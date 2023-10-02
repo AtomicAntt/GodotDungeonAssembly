@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/the dungeon's lingering spirit.wav-e58cf5ddde2d5d6640dfb1d089a50afa.sample"
+
+[deps]
+
+source_file="res://GameAssets/Music/the dungeon's lingering spirit.wav"
+dest_files=[ "res://.import/the dungeon's lingering spirit.wav-e58cf5ddde2d5d6640dfb1d089a50afa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

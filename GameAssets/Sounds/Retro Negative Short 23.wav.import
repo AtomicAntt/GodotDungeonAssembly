@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Negative Short 23.wav-bd4e1d4cf22d5f00293393b12c6553d1.sample"
+
+[deps]
+
+source_file="res://GameAssets/Sounds/Retro Negative Short 23.wav"
+dest_files=[ "res://.import/Retro Negative Short 23.wav-bd4e1d4cf22d5f00293393b12c6553d1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,887 @@
+[gd_scene load_steps=109 format=2]
+
+[ext_resource path="res://GameAssets/Dungeon Platform.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/BuildGui.gd" type="Script" id=2]
+[ext_resource path="res://GameAssets/Fonts/Silkscreen/Silkscreen-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://GameAssets/button UI-1.png.png" type="Texture" id=4]
+[ext_resource path="res://GameAssets/button UI-2.png (1).png" type="Texture" id=5]
+[ext_resource path="res://GameAssets/button UI-2.png.png" type="Texture" id=6]
+[ext_resource path="res://GameAssets/essential blocks/003.png" type="Texture" id=7]
+[ext_resource path="res://GameAssets/MovingPlatv2.png" type="Texture" id=8]
+[ext_resource path="res://GameAssets/Music/the dungeon's lingering spirit.wav" type="AudioStream" id=9]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/034.png" type="Texture" id=10]
+[ext_resource path="res://GameAssets/Music/even so my heart still beats.wav" type="AudioStream" id=11]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/023.png" type="Texture" id=12]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/022.png" type="Texture" id=13]
+[ext_resource path="res://title screen dungeon/background/001.png" type="Texture" id=14]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/028.png" type="Texture" id=15]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/032.png" type="Texture" id=16]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/030.png" type="Texture" id=17]
+[ext_resource path="res://title screen dungeon/background/003.png" type="Texture" id=18]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/033.png" type="Texture" id=19]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/015.png" type="Texture" id=20]
+[ext_resource path="res://title screen dungeon/background/002.png" type="Texture" id=21]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/018.png" type="Texture" id=22]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/031.png" type="Texture" id=23]
+[ext_resource path="res://title screen dungeon/titleScreen.gd" type="Script" id=24]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/035.png" type="Texture" id=25]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/019.png" type="Texture" id=26]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/006.png" type="Texture" id=27]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/017.png" type="Texture" id=28]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/020.png" type="Texture" id=29]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/012.png" type="Texture" id=30]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/009.png" type="Texture" id=31]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/036.png" type="Texture" id=32]
+[ext_resource path="res://title screen dungeon/ui and logo/quit/022.png" type="Texture" id=33]
+[ext_resource path="res://title screen dungeon/ui and logo/logo.png" type="Texture" id=34]
+[ext_resource path="res://title screen dungeon/ui and logo/settings/019.png" type="Texture" id=35]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/005.png" type="Texture" id=36]
+[ext_resource path="res://title screen dungeon/ui and logo/settings/021.png" type="Texture" id=37]
+[ext_resource path="res://title screen dungeon/ui and logo/start/016.png" type="Texture" id=38]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/013.png" type="Texture" id=39]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/011.png" type="Texture" id=40]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/014.png" type="Texture" id=41]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/008.png" type="Texture" id=42]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/007.png" type="Texture" id=43]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/010.png" type="Texture" id=44]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/004.png" type="Texture" id=45]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/004.png" type="Texture" id=46]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/005.png" type="Texture" id=47]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/001.png" type="Texture" id=48]
+[ext_resource path="res://title screen dungeon/ui and logo/quit/023.png" type="Texture" id=49]
+[ext_resource path="res://title screen dungeon/ui and logo/quit/024.png" type="Texture" id=50]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/016.png" type="Texture" id=51]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/003.png" type="Texture" id=52]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/002.png" type="Texture" id=53]
+[ext_resource path="res://title screen dungeon/ui and logo/settings/020.png" type="Texture" id=54]
+[ext_resource path="res://title screen dungeon/skeleton run cycle/000.png" type="Texture" id=55]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/026.png" type="Texture" id=56]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/021.png" type="Texture" id=57]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/027.png" type="Texture" id=58]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/029.png" type="Texture" id=59]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/024.png" type="Texture" id=60]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/001.png" type="Texture" id=61]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/000.png" type="Texture" id=62]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/002.png" type="Texture" id=63]
+[ext_resource path="res://title screen dungeon/ui and logo/start/017.png" type="Texture" id=64]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/003.png" type="Texture" id=65]
+[ext_resource path="res://title screen dungeon/mc animation smoothed/025.png" type="Texture" id=66]
+[ext_resource path="res://title screen dungeon/ui and logo/start/018.png" type="Texture" id=67]
+[ext_resource path="res://GameAssets/Sounds/selected.wav" type="AudioStream" id=68]
+[ext_resource path="res://GameAssets/Sounds/selecting.wav" type="AudioStream" id=69]
+[ext_resource path="res://GameAssets/Sounds/Retro Event UI StereoUP 01.wav" type="AudioStream" id=70]
+[ext_resource path="res://GameAssets/Sounds/Retro Blop 18.wav" type="AudioStream" id=71]
+[ext_resource path="res://GameAssets/Sounds/Retro Impact Punch 07.wav" type="AudioStream" id=72]
+[ext_resource path="res://GameAssets/Sounds/Retro Blop 07.wav" type="AudioStream" id=73]
+[ext_resource path="res://GameAssets/Sounds/Retro PickUp 18.wav" type="AudioStream" id=74]
+[ext_resource path="res://GameAssets/Sounds/Retro Event Wrong Simple 03.wav" type="AudioStream" id=75]
+[ext_resource path="res://GameAssets/Sounds/Retro Event UI 13.wav" type="AudioStream" id=76]
+[ext_resource path="res://GameAssets/button UI-1.png (2).png" type="Texture" id=77]
+[ext_resource path="res://GameAssets/button UI-1.png (1).png" type="Texture" id=78]
+[ext_resource path="res://GameAssets/button UI-1.png (3).png" type="Texture" id=79]
+[ext_resource path="res://GameAssets/Sounds/Retro Negative Short 23.wav" type="AudioStream" id=80]
+[ext_resource path="res://GameAssets/Sounds/Retro Instrument - crystal - C12.wav" type="AudioStream" id=81]
+[ext_resource path="res://GameAssets/Sounds/Retro Event Acute 08.wav" type="AudioStream" id=82]
+
+[sub_resource type="DynamicFont" id=13]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=14]
+default_font = SubResource( 13 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=5]
+default_font = SubResource( 4 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=17]
+default_font = SubResource( 16 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.921569, 0.564706, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.913725, 0.941176, 0.027451, 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=9]
+default_font = SubResource( 8 )
+Button/styles/hover = SubResource( 11 )
+Button/styles/normal = SubResource( 10 )
+Button/styles/pressed = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=7]
+default_font = SubResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.976471, 0.431373, 0.133333, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.94902, 0.439216, 0.101961, 1 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=24]
+default_font = SubResource( 23 )
+Button/styles/hover = SubResource( 20 )
+Button/styles/normal = SubResource( 21 )
+Button/styles/pressed = SubResource( 22 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=19]
+default_font = SubResource( 18 )
+
+[sub_resource type="Animation" id=25]
+resource_name = "FadeIn"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.0980392, 0.0823529, 0.0823529, 0 ), Color( 0.0980392, 0.0823529, 0.0823529, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=26]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.0980392, 0.0823529, 0.0823529, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 55 ), ExtResource( 48 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 62 ), ExtResource( 61 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 45 ), ExtResource( 36 ), ExtResource( 27 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 31 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 39 ), ExtResource( 41 ), ExtResource( 20 ), ExtResource( 51 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 57 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 60 ), ExtResource( 66 ), ExtResource( 56 ), ExtResource( 58 ), ExtResource( 15 ), ExtResource( 59 ), ExtResource( 17 ), ExtResource( 23 ), ExtResource( 16 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="MainScene" type="Control" groups=["main"]]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Levels" type="Node2D" parent="."]
+pause_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Levels"]
+pause_mode = 2
+
+[node name="BuildGui" type="Control" parent="Levels/CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Levels/CanvasLayer/BuildGui"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 22.0
+margin_top = -39.0
+margin_right = 460.0
+margin_bottom = -8.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 14 )
+custom_constants/separation = 57
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui/HBoxContainer"]
+margin_right = 64.0
+margin_bottom = 31.0
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer"]
+margin_right = 64.0
+margin_bottom = 11.0
+text = "Cost: 50"
+align = 1
+
+[node name="PlatformOne" type="TextureButton" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer"]
+margin_top = 15.0
+margin_right = 64.0
+margin_bottom = 31.0
+focus_mode = 0
+texture_normal = ExtResource( 1 )
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui/HBoxContainer"]
+margin_left = 121.0
+margin_right = 281.0
+margin_bottom = 31.0
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer3"]
+margin_right = 160.0
+margin_bottom = 11.0
+text = "Cost: 90"
+align = 1
+
+[node name="MovingPlatform" type="TextureButton" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer3"]
+margin_top = 15.0
+margin_right = 160.0
+margin_bottom = 31.0
+texture_normal = ExtResource( 8 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui/HBoxContainer"]
+margin_left = 338.0
+margin_right = 498.0
+margin_bottom = 31.0
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer2"]
+margin_right = 160.0
+margin_bottom = 11.0
+text = "Cost: 90"
+align = 1
+
+[node name="MovingPlatform2" type="TextureButton" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer2"]
+margin_top = 15.0
+margin_right = 160.0
+margin_bottom = 31.0
+texture_normal = ExtResource( 8 )
+flip_h = true
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui/HBoxContainer"]
+margin_left = 555.0
+margin_right = 597.0
+margin_bottom = 31.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4"]
+margin_right = 42.0
+margin_bottom = 11.0
+text = "Cost: 20"
+align = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4"]
+margin_top = 15.0
+margin_right = 42.0
+margin_bottom = 31.0
+
+[node name="Crate" type="TextureButton" parent="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4/CenterContainer"]
+margin_left = 13.0
+margin_right = 29.0
+margin_bottom = 16.0
+texture_normal = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/BuildGui"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -54.0
+margin_right = 54.0
+margin_bottom = 21.0
+theme = SubResource( 2 )
+text = "Build mode"
+
+[node name="BalanceLabel" type="Label" parent="Levels/CanvasLayer/BuildGui"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -298.0
+margin_top = 289.0
+margin_right = -190.0
+margin_bottom = 310.0
+theme = SubResource( 2 )
+text = "Current Balance:"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -80.0
+margin_top = -18.5
+margin_bottom = 18.5
+custom_constants/separation = 0
+alignment = 1
+
+[node name="Label2" type="Label" parent="Levels/CanvasLayer/BuildGui/VBoxContainer"]
+margin_right = 80.0
+margin_bottom = 21.0
+theme = SubResource( 5 )
+text = "play"
+align = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Levels/CanvasLayer/BuildGui/VBoxContainer"]
+margin_top = 21.0
+margin_right = 80.0
+margin_bottom = 37.0
+
+[node name="ConfirmButton" type="TextureButton" parent="Levels/CanvasLayer/BuildGui/VBoxContainer/CenterContainer"]
+margin_left = 32.0
+margin_right = 48.0
+margin_bottom = 16.0
+focus_mode = 0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui"]
+margin_left = 22.0
+margin_top = 260.0
+margin_right = 225.0
+margin_bottom = 286.0
+
+[node name="Label2" type="Label" parent="Levels/CanvasLayer/BuildGui/VBoxContainer2"]
+margin_right = 208.0
+margin_bottom = 11.0
+theme = SubResource( 17 )
+text = "Left click and drag parts to place them"
+
+[node name="Label3" type="Label" parent="Levels/CanvasLayer/BuildGui/VBoxContainer2"]
+margin_top = 15.0
+margin_right = 208.0
+margin_bottom = 26.0
+theme = SubResource( 17 )
+text = "Right Click existing parts to sell them"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Levels/CanvasLayer/BuildGui"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -194.0
+margin_top = 106.0
+margin_bottom = 131.0
+theme = SubResource( 9 )
+custom_constants/separation = 20
+
+[node name="SellButton" type="Button" parent="Levels/CanvasLayer/BuildGui/VBoxContainer3"]
+margin_right = 194.0
+margin_bottom = 25.0
+text = "Sell ALl Parts"
+
+[node name="PlayGui" type="Control" parent="Levels/CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/PlayGui"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -80.0
+margin_bottom = 37.0
+custom_constants/separation = 0
+alignment = 1
+
+[node name="Label2" type="Label" parent="Levels/CanvasLayer/PlayGui/VBoxContainer"]
+margin_right = 80.0
+margin_bottom = 21.0
+theme = SubResource( 5 )
+text = "Pause"
+align = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Levels/CanvasLayer/PlayGui/VBoxContainer"]
+margin_top = 21.0
+margin_right = 80.0
+margin_bottom = 37.0
+
+[node name="Pause" type="TextureButton" parent="Levels/CanvasLayer/PlayGui/VBoxContainer/CenterContainer"]
+margin_left = 32.0
+margin_right = 48.0
+margin_bottom = 16.0
+focus_mode = 0
+texture_normal = ExtResource( 78 )
+texture_pressed = ExtResource( 77 )
+texture_hover = ExtResource( 79 )
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/PlayGui"]
+margin_right = 110.0
+margin_bottom = 21.0
+theme = SubResource( 7 )
+text = "Level 1"
+
+[node name="DeathGui" type="Control" parent="Levels/CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Levels/CanvasLayer/DeathGui"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.117647, 0.101961, 0.101961, 0.384314 )
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/DeathGui"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -55.0
+margin_right = 55.0
+margin_bottom = 21.0
+theme = SubResource( 7 )
+text = "Game Over!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/DeathGui"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -97.0
+margin_top = -35.0
+margin_right = 97.0
+margin_bottom = 35.0
+theme = SubResource( 9 )
+custom_constants/separation = 20
+
+[node name="RestartButton" type="Button" parent="Levels/CanvasLayer/DeathGui/VBoxContainer"]
+margin_right = 194.0
+margin_bottom = 25.0
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="Levels/CanvasLayer/DeathGui/VBoxContainer"]
+margin_top = 45.0
+margin_right = 194.0
+margin_bottom = 70.0
+text = "Quit to Main Menu"
+
+[node name="WinGui" type="Control" parent="Levels/CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Levels/CanvasLayer/WinGui"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0980392, 0.0823529, 0.0823529, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/WinGui"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -194.0
+margin_top = -57.0
+margin_right = 194.0
+margin_bottom = 57.0
+theme = SubResource( 9 )
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/WinGui/VBoxContainer"]
+margin_right = 388.0
+margin_bottom = 69.0
+theme = SubResource( 7 )
+text = "You Win!
+You have completed all of the levels
+and escaped the dungeon!"
+align = 1
+
+[node name="QuitButton" type="Button" parent="Levels/CanvasLayer/WinGui/VBoxContainer"]
+margin_top = 89.0
+margin_right = 388.0
+margin_bottom = 114.0
+text = "Quit to Main Menu"
+
+[node name="PauseGui" type="Control" parent="Levels/CanvasLayer"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Levels/CanvasLayer/PauseGui"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.117647, 0.101961, 0.101961, 0.384314 )
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/PauseGui"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -55.0
+margin_right = 55.0
+margin_bottom = 21.0
+theme = SubResource( 7 )
+text = "Paused"
+align = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/PauseGui"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -97.0
+margin_top = -35.0
+margin_right = 97.0
+margin_bottom = 35.0
+theme = SubResource( 9 )
+custom_constants/separation = 20
+
+[node name="ResumeButton" type="Button" parent="Levels/CanvasLayer/PauseGui/VBoxContainer"]
+margin_right = 194.0
+margin_bottom = 25.0
+text = "Resume"
+
+[node name="RestartButton" type="Button" parent="Levels/CanvasLayer/PauseGui/VBoxContainer"]
+margin_top = 45.0
+margin_right = 194.0
+margin_bottom = 70.0
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="Levels/CanvasLayer/PauseGui/VBoxContainer"]
+margin_top = 90.0
+margin_right = 194.0
+margin_bottom = 115.0
+text = "Quit to Main Menu"
+
+[node name="ColorRect" type="ColorRect" parent="Levels/CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.00784314, 0.360784, 0.972549, 0 )
+
+[node name="SettingsGui" type="Control" parent="Levels/CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Levels/CanvasLayer/SettingsGui"]
+margin_top = 148.0
+margin_right = 292.0
+margin_bottom = 222.0
+theme = SubResource( 24 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3"]
+margin_right = 292.0
+margin_bottom = 35.0
+custom_constants/separation = -6
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3/VBoxContainer"]
+margin_right = 292.0
+margin_bottom = 25.0
+theme = SubResource( 19 )
+text = "Music Volume
+"
+align = 1
+
+[node name="HSlider" type="HSlider" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3/VBoxContainer"]
+margin_top = 19.0
+margin_right = 292.0
+margin_bottom = 35.0
+focus_mode = 0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3"]
+margin_top = 39.0
+margin_right = 292.0
+margin_bottom = 74.0
+custom_constants/separation = -6
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3/VBoxContainer2"]
+margin_right = 292.0
+margin_bottom = 25.0
+theme = SubResource( 19 )
+text = "Effects Volume
+"
+align = 1
+
+[node name="HSlider" type="HSlider" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3/VBoxContainer2"]
+margin_top = 19.0
+margin_right = 292.0
+margin_bottom = 35.0
+focus_mode = 0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="BackButton" type="Button" parent="Levels/CanvasLayer/SettingsGui/VBoxContainer3"]
+margin_top = 78.0
+margin_right = 292.0
+margin_bottom = 93.0
+text = "Back"
+
+[node name="LevelTransition" type="Control" parent="Levels/CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Levels/CanvasLayer/LevelTransition"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0980392, 0.0823529, 0.0823529, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Levels/CanvasLayer/LevelTransition"]
+anims/FadeIn = SubResource( 25 )
+anims/RESET = SubResource( 26 )
+
+[node name="Label" type="Label" parent="Levels/CanvasLayer/LevelTransition"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -91.0
+margin_top = -10.5
+margin_right = 91.0
+margin_bottom = 10.5
+theme = SubResource( 7 )
+text = "Level 1 completed"
+align = 1
+percent_visible = 0.0
+
+[node name="AssembledPieces" type="Node" parent="Levels"]
+pause_mode = 1
+
+[node name="Music2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "Music"
+
+[node name="titleScreen" type="Node2D" parent="."]
+script = ExtResource( 24 )
+
+[node name="room" type="Sprite" parent="titleScreen"]
+texture = ExtResource( 14 )
+centered = false
+
+[node name="trap" type="Sprite" parent="titleScreen"]
+texture = ExtResource( 21 )
+centered = false
+
+[node name="skeleton" type="AnimatedSprite" parent="titleScreen"]
+position = Vector2( 408, 200 )
+frames = SubResource( 15 )
+playing = true
+
+[node name="wall" type="Sprite" parent="titleScreen"]
+texture = ExtResource( 18 )
+centered = false
+
+[node name="mc" type="AnimatedSprite" parent="titleScreen"]
+position = Vector2( 470, 284 )
+frames = SubResource( 1 )
+frame = 32
+playing = true
+
+[node name="Hands" type="Sprite" parent="titleScreen"]
+position = Vector2( 453, 284 )
+texture = ExtResource( 32 )
+
+[node name="Logo" type="Sprite" parent="titleScreen"]
+position = Vector2( 46, 32 )
+texture = ExtResource( 34 )
+centered = false
+
+[node name="buttons" type="VBoxContainer" parent="titleScreen"]
+margin_left = 35.0
+margin_top = 148.0
+margin_right = 260.0
+margin_bottom = 306.0
+custom_constants/separation = 10
+
+[node name="start" type="TextureButton" parent="titleScreen/buttons"]
+margin_right = 225.0
+margin_bottom = 46.0
+focus_mode = 0
+texture_normal = ExtResource( 38 )
+texture_pressed = ExtResource( 64 )
+texture_hover = ExtResource( 67 )
+texture_disabled = ExtResource( 64 )
+texture_focused = ExtResource( 67 )
+
+[node name="settings" type="TextureButton" parent="titleScreen/buttons"]
+margin_top = 56.0
+margin_right = 225.0
+margin_bottom = 102.0
+focus_mode = 0
+texture_normal = ExtResource( 35 )
+texture_pressed = ExtResource( 54 )
+texture_hover = ExtResource( 37 )
+texture_disabled = ExtResource( 54 )
+
+[node name="quit" type="TextureButton" parent="titleScreen/buttons"]
+margin_top = 112.0
+margin_right = 225.0
+margin_bottom = 158.0
+focus_mode = 0
+texture_normal = ExtResource( 33 )
+texture_pressed = ExtResource( 49 )
+texture_hover = ExtResource( 50 )
+texture_disabled = ExtResource( 49 )
+texture_focused = ExtResource( 50 )
+
+[node name="Music1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
+bus = "Music"
+
+[node name="Selecting" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 69 )
+bus = "Effects"
+
+[node name="Selected" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 68 )
+bus = "Effects"
+
+[node name="TouchBlueprint" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 70 )
+bus = "Effects"
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 71 )
+bus = "Effects"
+
+[node name="Pickup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 73 )
+bus = "Effects"
+
+[node name="Placedown" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 72 )
+bus = "Effects"
+
+[node name="Sell" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 74 )
+bus = "Effects"
+
+[node name="WrongPlacement" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 75 )
+bus = "Effects"
+
+[node name="HoverParts" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 76 )
+bus = "Effects"
+
+[node name="Die" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 80 )
+bus = "Effects"
+
+[node name="MoveSlider" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 81 )
+bus = "Effects"
+
+[node name="LevelCompleted" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 82 )
+
+[connection signal="button_down" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer/PlatformOne" to="." method="_on_PlatformOne_button_down"]
+[connection signal="button_up" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer/PlatformOne" to="." method="_on_object_button_up"]
+[connection signal="mouse_entered" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer/PlatformOne" to="." method="_on_PlatformOne_mouse_entered"]
+[connection signal="mouse_exited" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer/PlatformOne" to="." method="_on_PlatformOne_mouse_exited"]
+[connection signal="button_down" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer3/MovingPlatform" to="." method="_on_MovingPlatform_button_down"]
+[connection signal="button_up" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer3/MovingPlatform" to="." method="_on_object_button_up"]
+[connection signal="mouse_entered" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer3/MovingPlatform" to="." method="_on_MovingPlatform_mouse_entered"]
+[connection signal="mouse_exited" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer3/MovingPlatform" to="." method="_on_MovingPlatform_mouse_exited"]
+[connection signal="button_down" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer2/MovingPlatform2" to="." method="_on_MovingPlatform2_button_down"]
+[connection signal="button_up" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer2/MovingPlatform2" to="." method="_on_object_button_up"]
+[connection signal="mouse_entered" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer2/MovingPlatform2" to="." method="_on_MovingPlatform2_mouse_entered"]
+[connection signal="mouse_exited" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer2/MovingPlatform2" to="." method="_on_MovingPlatform2_mouse_exited"]
+[connection signal="button_down" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4/CenterContainer/Crate" to="." method="_on_Crate_button_down"]
+[connection signal="button_up" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4/CenterContainer/Crate" to="." method="_on_object_button_up"]
+[connection signal="mouse_entered" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4/CenterContainer/Crate" to="." method="_on_Crate_mouse_entered"]
+[connection signal="mouse_exited" from="Levels/CanvasLayer/BuildGui/HBoxContainer/VBoxContainer4/CenterContainer/Crate" to="." method="_on_Crate_mouse_exited"]
+[connection signal="pressed" from="Levels/CanvasLayer/BuildGui/VBoxContainer/CenterContainer/ConfirmButton" to="." method="_on_ConfirmButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/BuildGui/VBoxContainer3/SellButton" to="." method="_on_SellButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/PlayGui/VBoxContainer/CenterContainer/Pause" to="." method="_on_Pause_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/DeathGui/VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/DeathGui/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/WinGui/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/PauseGui/VBoxContainer/ResumeButton" to="." method="_on_ResumeButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/PauseGui/VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="Levels/CanvasLayer/PauseGui/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="value_changed" from="Levels/CanvasLayer/SettingsGui/VBoxContainer3/VBoxContainer/HSlider" to="." method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="Levels/CanvasLayer/SettingsGui/VBoxContainer3/VBoxContainer2/HSlider" to="." method="_on_EffectsSlider_value_changed"]
+[connection signal="pressed" from="Levels/CanvasLayer/SettingsGui/VBoxContainer3/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="mouse_entered" from="titleScreen/buttons/start" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="titleScreen/buttons/start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="titleScreen/buttons/settings" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="titleScreen/buttons/settings" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="titleScreen/buttons/quit" to="." method="_on_button_mouse_entered"]
